@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/top_bun_image"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/topbun" />
+
+    <RadioGroup
+        android:id="@+id/meat_rgroup"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/top_bun_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_beef"
+            android:checked="true"
+            android:text="@string/beef_patty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radio_lamb"
+            android:text="@string/lamb_patty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radio_ostrich"
+            android:text="@string/ostrich_patty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/ham_checkbox"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/meat_rgroup"
+        android:text="@string/proscuitto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/cheese_rgroup"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/ham_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_cheddar"
+            android:checked="true"
+            android:text="@string/cheddar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radio_provolone"
+            android:text="@string/provolone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cheese_rgroup"
+        android:text="@string/sauce"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/sauce_seekbar"
+        android:paddingTop="10dp"
+        android:layout_alignLeft="@id/cheese_rgroup"
+        android:layout_alignRight="@id/cheese_rgroup"
+        android:layout_below="@id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/condiments_layout"
+
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sauce_seekbar"
+        android:layout_alignLeft="@id/cheese_rgroup"
+        android:layout_alignRight="@id/cheese_rgroup">
+
+        <CheckBox
+            android:id="@+id/ketchup_CheckBox"
+            android:text="@string/ketchup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/relish_CheckBox"
+            android:text="@string/relish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/mustard_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mustard" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/vegetable_table"
+        android:layout_below="@+id/condiments_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TableRow
+            android:id="@+id/firstRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/lettuce_CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lettuce" />
+
+            <CheckBox
+                android:id="@+id/tomatoes_CheckBox"
+                android:text="@string/tomatoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/onions_CheckBox"
+                android:text="@string/onions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/pickles_CheckBox"
+                android:text="@string/pickles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/calories_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/vegetable_table"
+        android:text="@string/calories"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/bottom_bun_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/calories_textview"
+        android:src="@drawable/bottombun"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

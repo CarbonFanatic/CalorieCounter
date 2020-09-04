@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CalorieCounter</string>
+    <string name="beef_patty">Beef Patty</string>
+    <string name="lamb_patty">Lamb Patty</string>
+    <string name="ostrich_patty">Ostrich Patty</string>
+    <string name="cheddar">Asiago Cheese</string>
+    <string name="provolone">Creme Fraiche</string>
+    <string name="sauce">Caviar Sauce up to one teaspoon</string>
+    <string name="proscuitto">Proscuitto</string>
+    <string name="calories">Calories?</string>
+    <string name="ketchup">Ketchup</string>
+    <string name="relish">Relish</string>
+    <string name="mustard">Mustard</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="tomatoes">Tomatoes</string>
+    <string name="onions">Onions</string>
+    <string name="pickles">Pickles</string>
+
+
+</resources>
